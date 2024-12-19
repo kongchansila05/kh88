@@ -5,15 +5,15 @@ require("dotenv").config();
 
 // Environment variables and constants
 const API_KEY =
-    process.env.API_KEY || "7806217113:AAFlIuLrnq3g74zNNEOeSBC3NnJLufl4R-I";
+    process.env.API_KEY || "7748675277:AAELAanAXD5E-e2QtaD9IzgrCiTbTXpse-w";
 const bot = new TelegramBot(API_KEY, { polling: true });
 
 const REGISTER_API = "https://p-api.sbc369.club/api/cash/registration/";
 const LOGIN_API = "https://p-api.sbc369.club/api/cash/login/";
 const CAPTION =
-    "សំរាប់ចម្ងល់ឬបញ្ហាផ្សេងៗ នឹង ដាក់/ដក ប្រាក់ ចុចទីនេះ 👉🏻 @KC999_CS  បញ្ជាក់៖ នេះជាម៉ាសុីនសម្រាប់តែបង្កើតអាខោន មិនចេះឆ្លើយតបទេ។ សូមអរគុណ!";
+    "សំរាប់ចម្ងល់ឬបញ្ហាផ្សេងៗ នឹង ដាក់/ដក ប្រាក់ ចុចទីនេះ 👉🏻 @KH88BET  បញ្ជាក់៖ នេះជាម៉ាសុីនសម្រាប់តែបង្កើតអាខោន មិនចេះឆ្លើយតបទេ។ សូមអរគុណ!";
 const CERT = "3Wum85V6T95x9CD6trrXiS";
-const IMAGE_URL = "https://i.ibb.co/5cKKK9W/i5Ra3MQ.jpg";
+const IMAGE_URL = "https://i.imgur.com/i5Ra3MQ.jpeg";
 const Authorization = "Token e3543a091350bec511dbe18c6acfcbe4ed4a4b97";
 // Function to get public IP
 function generateNineDigitNumber() {
