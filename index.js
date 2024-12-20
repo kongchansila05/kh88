@@ -32,7 +32,7 @@ function handleContactCommand(chatId) {
     });
 }
 
-bot.onText(/\/(register|start)/, async (msg) => {
+bot.onText(/\/(myaccount|start)/, async (msg) => {
     const chatId = msg.chat.id;
     const firstName = msg.from.first_name || "";
     const lastName = msg.from.last_name || "";
