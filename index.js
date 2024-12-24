@@ -26,6 +26,9 @@ function handleContactCommand(chatId) {
             inline_keyboard: [
                 [
                     { text: "👩‍💻ផ្នែកសេវាកម្ម 24/7", url: "https://t.me/KH88BET" }
+                ],
+                [   
+                    { text: "ការផ្តល់ជូនពិសេស", callback_data: "promo_big" } 
                 ]
             ]
         }
@@ -193,6 +196,20 @@ bot.on('callback_query', (callbackQuery) => {
         });
     } else if (data === "register") {
         bot.sendMessage(message.chat.id, "You clicked on Register Now!");
+    } else if (data === "promo_big") {
+      bot.sendMessage(message.chat.id, 
+        `🌟<b>ការផ្តល់ជូនពិសេស KH88BET</b> 🌟\n\n 🎁ស្វាគមន៏សមាជិថ្មី 88%\n 🎁ប្រាក់បន្ថែមរៀងរាល់ថ្ងៃ 10%\n 🎁ប្រាក់បង្វិលប្រចាំខែ 5%`, 
+        {
+            parse_mode: "HTML",
+            reply_markup: {
+                inline_keyboard: [
+                    [{ text: "ស្វាគមន៏សមាជិថ្មី 88%", callback_data: "promo_80" }],
+                    [{ text: "ប្រាក់បន្ថែមរៀងរាល់ថ្ងៃ 10%", callback_data: "promo_10" }],
+                    [{ text: "ប្រាក់បង្វិលប្រចាំខែ 5%", callback_data: "promo_5" }],
+                ]
+            }
+        }
+    );
     } 
 });
 
